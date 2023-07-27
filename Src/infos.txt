@@ -1,0 +1,2 @@
+It needs to enable Stereo Mixer input card from sound properties, listening default output card, levels of sound for both cards must be set to minimum (reaching 0), or if your default output card is connected to a device, you can lower the sound from the device, and listen with other device you choose
+

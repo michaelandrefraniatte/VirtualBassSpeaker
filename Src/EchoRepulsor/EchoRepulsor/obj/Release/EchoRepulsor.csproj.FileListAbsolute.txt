@@ -1,0 +1,13 @@
+C:\Users\micha\Documents\Perso\tool\EchoRepulsor\Src\EchoRepulsor\EchoRepulsor\bin\Release\EchoRepulsor.exe.config
+C:\Users\micha\Documents\Perso\tool\EchoRepulsor\Src\EchoRepulsor\EchoRepulsor\bin\Release\EchoRepulsor.exe
+C:\Users\micha\Documents\Perso\tool\EchoRepulsor\Src\EchoRepulsor\EchoRepulsor\bin\Release\EchoRepulsor.pdb
+C:\Users\micha\Documents\Perso\tool\EchoRepulsor\Src\EchoRepulsor\EchoRepulsor\bin\Release\NAudio.xml
+C:\Users\micha\Documents\Perso\tool\EchoRepulsor\Src\EchoRepulsor\EchoRepulsor\obj\Release\EchoRepulsor.csproj.AssemblyReference.cache
+C:\Users\micha\Documents\Perso\tool\EchoRepulsor\Src\EchoRepulsor\EchoRepulsor\obj\Release\EchoRepulsor.csproj.SuggestedBindingRedirects.cache
+C:\Users\micha\Documents\Perso\tool\EchoRepulsor\Src\EchoRepulsor\EchoRepulsor\obj\Release\EchoRepulsor.Form1.resources
+C:\Users\micha\Documents\Perso\tool\EchoRepulsor\Src\EchoRepulsor\EchoRepulsor\obj\Release\EchoRepulsor.Properties.Resources.resources
+C:\Users\micha\Documents\Perso\tool\EchoRepulsor\Src\EchoRepulsor\EchoRepulsor\obj\Release\EchoRepulsor.csproj.GenerateResource.cache
+C:\Users\micha\Documents\Perso\tool\EchoRepulsor\Src\EchoRepulsor\EchoRepulsor\obj\Release\EchoRepulsor.csproj.CoreCompileInputs.cache
+C:\Users\micha\Documents\Perso\tool\EchoRepulsor\Src\EchoRepulsor\EchoRepulsor\obj\Release\EchoRepulsor.csproj.CopyComplete
+C:\Users\micha\Documents\Perso\tool\EchoRepulsor\Src\EchoRepulsor\EchoRepulsor\obj\Release\EchoRepulsor.exe
+C:\Users\micha\Documents\Perso\tool\EchoRepulsor\Src\EchoRepulsor\EchoRepulsor\obj\Release\EchoRepulsor.pdb
