@@ -1,0 +1,12 @@
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\Echorce\Echorce\bin\Release\Echorce.exe.config
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\Echorce\Echorce\bin\Release\Echorce.exe
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\Echorce\Echorce\bin\Release\Echorce.pdb
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\Echorce\Echorce\obj\Release\Echorce.csproj.AssemblyReference.cache
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\Echorce\Echorce\obj\Release\Echorce.csproj.SuggestedBindingRedirects.cache
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\Echorce\Echorce\obj\Release\Echorce.Form1.resources
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\Echorce\Echorce\obj\Release\Echorce.Properties.Resources.resources
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\Echorce\Echorce\obj\Release\Echorce.csproj.GenerateResource.cache
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\Echorce\Echorce\obj\Release\Echorce.csproj.CoreCompileInputs.cache
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\Echorce\Echorce\obj\Release\Echorce.csproj.CopyComplete
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\Echorce\Echorce\obj\Release\Echorce.exe
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\Echorce\Echorce\obj\Release\Echorce.pdb
