@@ -41,6 +41,9 @@ namespace Echorce
                     textBox1.Text = file.ReadLine();
                     textBox2.Text = file.ReadLine();
                     textBox3.Text = file.ReadLine();
+                    textBox4.Text = file.ReadLine();
+                    textBox5.Text = file.ReadLine();
+                    textBox6.Text = file.ReadLine();
                 }
             }
         }
@@ -83,7 +86,19 @@ namespace Echorce
                 createdfile.WriteLine(textBox1.Text);
                 createdfile.WriteLine(textBox2.Text);
                 createdfile.WriteLine(textBox3.Text);
+                createdfile.WriteLine(textBox4.Text);
+                createdfile.WriteLine(textBox5.Text);
+                createdfile.WriteLine(textBox6.Text);
             }
+        }
+        private void Form1_Shown(object sender, EventArgs e)
+        {
+            button1.PerformClick();
+            button2.PerformClick();
+            button3.PerformClick();
+            button4.PerformClick();
+            button5.PerformClick();
+            button6.PerformClick();
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -97,8 +112,8 @@ namespace Echorce
                         var sine20Seconds = new SignalGenerator()
                         {
                             Gain = 1,
-                            Frequency = Convert.ToDouble(textBox1.Text) - 250,
-                            FrequencyEnd = Convert.ToDouble(textBox1.Text) + 250,
+                            Frequency = Convert.ToDouble(textBox1.Text) - 249,
+                            FrequencyEnd = Convert.ToDouble(textBox1.Text) + 249,
                             Type = SignalGeneratorType.Sweep,
                             SweepLengthSecs = 20
                         }
@@ -131,8 +146,8 @@ namespace Echorce
                         var sine20Seconds = new SignalGenerator()
                         {
                             Gain = 1,
-                            Frequency = Convert.ToDouble(textBox2.Text) - 250,
-                            FrequencyEnd = Convert.ToDouble(textBox2.Text) + 250,
+                            Frequency = Convert.ToDouble(textBox2.Text) - 249,
+                            FrequencyEnd = Convert.ToDouble(textBox2.Text) + 249,
                             Type = SignalGeneratorType.Sweep,
                             SweepLengthSecs = 20
                         }
@@ -165,8 +180,8 @@ namespace Echorce
                         var sine20Seconds = new SignalGenerator()
                         {
                             Gain = 1,
-                            Frequency = Convert.ToDouble(textBox3.Text) - 250,
-                            FrequencyEnd = Convert.ToDouble(textBox3.Text) + 250,
+                            Frequency = Convert.ToDouble(textBox3.Text) - 249,
+                            FrequencyEnd = Convert.ToDouble(textBox3.Text) + 249,
                             Type = SignalGeneratorType.Sweep,
                             SweepLengthSecs = 20
                         }
@@ -186,6 +201,108 @@ namespace Echorce
             }
             else
                 button3.Text = "Play";
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (button4.Text == "Play")
+            {
+                button4.Text = "Stop";
+                Task.Run(() =>
+                {
+                    while (button4.Text == "Stop")
+                    {
+                        var sine20Seconds = new SignalGenerator()
+                        {
+                            Gain = 1,
+                            Frequency = Convert.ToDouble(textBox4.Text) - 249,
+                            FrequencyEnd = Convert.ToDouble(textBox4.Text) + 249,
+                            Type = SignalGeneratorType.Sweep,
+                            SweepLengthSecs = 20
+                        }
+                        .Take(TimeSpan.FromSeconds(20));
+                        using (var wo = new WaveOutEvent())
+                        {
+                            wo.Init(sine20Seconds);
+                            wo.Play();
+                            while (wo.PlaybackState == PlaybackState.Playing)
+                            {
+                                Thread.Sleep(1);
+                            }
+                        }
+                        Thread.Sleep(1);
+                    }
+                });
+            }
+            else
+                button4.Text = "Play";
+        }
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (button5.Text == "Play")
+            {
+                button5.Text = "Stop";
+                Task.Run(() =>
+                {
+                    while (button5.Text == "Stop")
+                    {
+                        var sine20Seconds = new SignalGenerator()
+                        {
+                            Gain = 1,
+                            Frequency = Convert.ToDouble(textBox5.Text) - 249,
+                            FrequencyEnd = Convert.ToDouble(textBox5.Text) + 249,
+                            Type = SignalGeneratorType.Sweep,
+                            SweepLengthSecs = 20
+                        }
+                        .Take(TimeSpan.FromSeconds(20));
+                        using (var wo = new WaveOutEvent())
+                        {
+                            wo.Init(sine20Seconds);
+                            wo.Play();
+                            while (wo.PlaybackState == PlaybackState.Playing)
+                            {
+                                Thread.Sleep(1);
+                            }
+                        }
+                        Thread.Sleep(1);
+                    }
+                });
+            }
+            else
+                button5.Text = "Play";
+        }
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (button6.Text == "Play")
+            {
+                button6.Text = "Stop";
+                Task.Run(() =>
+                {
+                    while (button6.Text == "Stop")
+                    {
+                        var sine20Seconds = new SignalGenerator()
+                        {
+                            Gain = 1,
+                            Frequency = Convert.ToDouble(textBox6.Text) - 249,
+                            FrequencyEnd = Convert.ToDouble(textBox6.Text) + 249,
+                            Type = SignalGeneratorType.Sweep,
+                            SweepLengthSecs = 20
+                        }
+                        .Take(TimeSpan.FromSeconds(20));
+                        using (var wo = new WaveOutEvent())
+                        {
+                            wo.Init(sine20Seconds);
+                            wo.Play();
+                            while (wo.PlaybackState == PlaybackState.Playing)
+                            {
+                                Thread.Sleep(1);
+                            }
+                        }
+                        Thread.Sleep(1);
+                    }
+                });
+            }
+            else
+                button6.Text = "Play";
         }
     }
 }
