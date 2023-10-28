@@ -143,7 +143,7 @@ namespace Echorce
                         {
                             Gain = 1,
                             Frequency = Convert.ToDouble(textBox1.Text),
-                            FrequencyEnd = Convert.ToDouble(textBox1.Text) + 1000,
+                            FrequencyEnd = Convert.ToDouble(textBox1.Text) + (int)(Convert.ToDouble(textBox1.Text) / 10f),
                             Type = SignalGeneratorType.Sweep,
                             SweepLengthSecs = 20
                         }
@@ -177,7 +177,7 @@ namespace Echorce
                         {
                             Gain = 1,
                             Frequency = Convert.ToDouble(textBox2.Text),
-                            FrequencyEnd = Convert.ToDouble(textBox2.Text) + 1000,
+                            FrequencyEnd = Convert.ToDouble(textBox2.Text) + (int)(Convert.ToDouble(textBox2.Text) / 10f),
                             Type = SignalGeneratorType.Sweep,
                             SweepLengthSecs = 20
                         }
@@ -211,7 +211,7 @@ namespace Echorce
                         {
                             Gain = 1,
                             Frequency = Convert.ToDouble(textBox3.Text),
-                            FrequencyEnd = Convert.ToDouble(textBox3.Text) + 1000,
+                            FrequencyEnd = Convert.ToDouble(textBox3.Text) + (int)(Convert.ToDouble(textBox3.Text) / 10f),
                             Type = SignalGeneratorType.Sweep,
                             SweepLengthSecs = 20
                         }
@@ -245,7 +245,7 @@ namespace Echorce
                         {
                             Gain = 1,
                             Frequency = Convert.ToDouble(textBox4.Text),
-                            FrequencyEnd = Convert.ToDouble(textBox4.Text) + 1000,
+                            FrequencyEnd = Convert.ToDouble(textBox4.Text) + (int)(Convert.ToDouble(textBox4.Text) / 10f),
                             Type = SignalGeneratorType.Sweep,
                             SweepLengthSecs = 20
                         }
@@ -279,7 +279,7 @@ namespace Echorce
                         {
                             Gain = 1,
                             Frequency = Convert.ToDouble(textBox5.Text),
-                            FrequencyEnd = Convert.ToDouble(textBox5.Text) + 1000,
+                            FrequencyEnd = Convert.ToDouble(textBox5.Text) + (int)(Convert.ToDouble(textBox5.Text) / 10f),
                             Type = SignalGeneratorType.Sweep,
                             SweepLengthSecs = 20
                         }
@@ -313,7 +313,7 @@ namespace Echorce
                         {
                             Gain = 1,
                             Frequency = Convert.ToDouble(textBox6.Text),
-                            FrequencyEnd = Convert.ToDouble(textBox6.Text) + 1000,
+                            FrequencyEnd = Convert.ToDouble(textBox6.Text) + (int)(Convert.ToDouble(textBox6.Text) / 10f),
                             Type = SignalGeneratorType.Sweep,
                             SweepLengthSecs = 20
                         }
@@ -347,7 +347,7 @@ namespace Echorce
                         {
                             Gain = 1,
                             Frequency = Convert.ToDouble(textBox7.Text),
-                            FrequencyEnd = Convert.ToDouble(textBox7.Text) + 1000,
+                            FrequencyEnd = Convert.ToDouble(textBox7.Text) + (int)(Convert.ToDouble(textBox7.Text) / 10f),
                             Type = SignalGeneratorType.Sweep,
                             SweepLengthSecs = 20
                         }
@@ -381,7 +381,7 @@ namespace Echorce
                         {
                             Gain = 1,
                             Frequency = Convert.ToDouble(textBox8.Text),
-                            FrequencyEnd = Convert.ToDouble(textBox8.Text) + 1000,
+                            FrequencyEnd = Convert.ToDouble(textBox8.Text) + (int)(Convert.ToDouble(textBox8.Text) / 10f),
                             Type = SignalGeneratorType.Sweep,
                             SweepLengthSecs = 20
                         }
@@ -415,7 +415,7 @@ namespace Echorce
                         {
                             Gain = 1,
                             Frequency = Convert.ToDouble(textBox9.Text),
-                            FrequencyEnd = Convert.ToDouble(textBox9.Text) + 1000,
+                            FrequencyEnd = Convert.ToDouble(textBox9.Text) + (int)(Convert.ToDouble(textBox9.Text) / 10f),
                             Type = SignalGeneratorType.Sweep,
                             SweepLengthSecs = 20
                         }
@@ -449,7 +449,7 @@ namespace Echorce
                         {
                             Gain = 1,
                             Frequency = Convert.ToDouble(textBox10.Text),
-                            FrequencyEnd = Convert.ToDouble(textBox10.Text) + 1000,
+                            FrequencyEnd = Convert.ToDouble(textBox10.Text) + (int)(Convert.ToDouble(textBox10.Text) / 10f),
                             Type = SignalGeneratorType.Sweep,
                             SweepLengthSecs = 20
                         }
@@ -483,7 +483,7 @@ namespace Echorce
                         {
                             Gain = 1,
                             Frequency = Convert.ToDouble(textBox11.Text),
-                            FrequencyEnd = Convert.ToDouble(textBox11.Text) + 1000,
+                            FrequencyEnd = Convert.ToDouble(textBox11.Text) + (int)(Convert.ToDouble(textBox11.Text) / 10f),
                             Type = SignalGeneratorType.Sweep,
                             SweepLengthSecs = 20
                         }
@@ -517,7 +517,7 @@ namespace Echorce
                         {
                             Gain = 1,
                             Frequency = Convert.ToDouble(textBox12.Text),
-                            FrequencyEnd = Convert.ToDouble(textBox12.Text) + 1000,
+                            FrequencyEnd = Convert.ToDouble(textBox12.Text) + (int)(Convert.ToDouble(textBox12.Text) / 10f),
                             Type = SignalGeneratorType.Sweep,
                             SweepLengthSecs = 20
                         }
@@ -551,7 +551,7 @@ namespace Echorce
                         {
                             Gain = 1,
                             Frequency = Convert.ToDouble(textBox13.Text),
-                            FrequencyEnd = Convert.ToDouble(textBox13.Text) + 1000,
+                            FrequencyEnd = Convert.ToDouble(textBox13.Text) + (int)(Convert.ToDouble(textBox13.Text) / 10f),
                             Type = SignalGeneratorType.Sweep,
                             SweepLengthSecs = 20
                         }
@@ -585,7 +585,7 @@ namespace Echorce
                         {
                             Gain = 1,
                             Frequency = Convert.ToDouble(textBox14.Text),
-                            FrequencyEnd = Convert.ToDouble(textBox14.Text) + 1000,
+                            FrequencyEnd = Convert.ToDouble(textBox14.Text) + (int)(Convert.ToDouble(textBox14.Text) / 10f),
                             Type = SignalGeneratorType.Sweep,
                             SweepLengthSecs = 20
                         }
@@ -619,7 +619,7 @@ namespace Echorce
                         {
                             Gain = 1,
                             Frequency = Convert.ToDouble(textBox15.Text),
-                            FrequencyEnd = Convert.ToDouble(textBox15.Text) + 1000,
+                            FrequencyEnd = Convert.ToDouble(textBox15.Text) + (int)(Convert.ToDouble(textBox15.Text) / 10f),
                             Type = SignalGeneratorType.Sweep,
                             SweepLengthSecs = 20
                         }
@@ -653,7 +653,7 @@ namespace Echorce
                         {
                             Gain = 1,
                             Frequency = Convert.ToDouble(textBox16.Text),
-                            FrequencyEnd = Convert.ToDouble(textBox16.Text) + 1000,
+                            FrequencyEnd = Convert.ToDouble(textBox16.Text) + (int)(Convert.ToDouble(textBox16.Text) / 10f),
                             Type = SignalGeneratorType.Sweep,
                             SweepLengthSecs = 20
                         }
