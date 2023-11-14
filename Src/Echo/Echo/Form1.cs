@@ -41,7 +41,7 @@ namespace Echo
                 if (!capturedevicefirst)
                     break;
             }
-            waveOut = new WasapiOut(wasapi, AudioClientShareMode.Exclusive, false, 2);
+            waveOut = new WasapiOut(wasapi, AudioClientShareMode.Shared, false, 2);
             waveProvider = new BufferedWaveProvider(waveOut.OutputWaveFormat);
             waveOut.Init(waveProvider);
             waveOut.Play();
