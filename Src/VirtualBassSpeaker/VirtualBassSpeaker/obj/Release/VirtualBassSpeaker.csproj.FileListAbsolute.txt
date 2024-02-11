@@ -52,3 +52,17 @@ C:\Users\micha\Documents\File\perso\VirtualBassSpeaker\Src\VirtualBassSpeaker\Vi
 C:\Users\micha\Documents\File\perso\VirtualBassSpeaker\Src\VirtualBassSpeaker\VirtualBassSpeaker\obj\Release\VirtualBassSpeaker.exe.config
 C:\Users\micha\Documents\Perso\VirtualBassSpeaker\Src\VirtualBassSpeaker\VirtualBassSpeaker\bin\Release\NAudio.xml
 C:\Users\micha\Documents\Perso\VirtualBassSpeaker\Src\VirtualBassSpeaker\VirtualBassSpeaker\obj\Release\VirtualBassSpeaker.exe.config
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\VirtualBassSpeaker\VirtualBassSpeaker\bin\Release\VirtualBassSpeaker.exe.config
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\VirtualBassSpeaker\VirtualBassSpeaker\bin\Release\VirtualBassSpeaker.exe
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\VirtualBassSpeaker\VirtualBassSpeaker\bin\Release\VirtualBassSpeaker.pdb
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\VirtualBassSpeaker\VirtualBassSpeaker\bin\Release\NAudio.xml
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\VirtualBassSpeaker\VirtualBassSpeaker\obj\Release\VirtualBassSpeaker.csproj.AssemblyReference.cache
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\VirtualBassSpeaker\VirtualBassSpeaker\obj\Release\VirtualBassSpeaker.csproj.SuggestedBindingRedirects.cache
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\VirtualBassSpeaker\VirtualBassSpeaker\obj\Release\VirtualBassSpeaker.exe.config
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\VirtualBassSpeaker\VirtualBassSpeaker\obj\Release\VirtualBassSpeaker.Form1.resources
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\VirtualBassSpeaker\VirtualBassSpeaker\obj\Release\VirtualBassSpeaker.Properties.Resources.resources
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\VirtualBassSpeaker\VirtualBassSpeaker\obj\Release\VirtualBassSpeaker.csproj.GenerateResource.cache
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\VirtualBassSpeaker\VirtualBassSpeaker\obj\Release\VirtualBassSpeaker.csproj.CoreCompileInputs.cache
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\VirtualBassSpeaker\VirtualBassSpeaker\obj\Release\VirtualBassSpeaker.csproj.CopyComplete
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\VirtualBassSpeaker\VirtualBassSpeaker\obj\Release\VirtualBassSpeaker.exe
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\VirtualBassSpeaker\VirtualBassSpeaker\obj\Release\VirtualBassSpeaker.pdb

@@ -54,103 +54,112 @@
             this.comboBox1.BackColor = System.Drawing.Color.Black;
             this.comboBox1.ForeColor = System.Drawing.Color.White;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(73, 300);
+            this.comboBox1.Location = new System.Drawing.Point(97, 369);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(267, 21);
+            this.comboBox1.Size = new System.Drawing.Size(355, 24);
             this.comboBox1.TabIndex = 55;
             // 
             // trackBar8
             // 
-            this.trackBar8.Location = new System.Drawing.Point(368, 12);
+            this.trackBar8.Location = new System.Drawing.Point(491, 15);
+            this.trackBar8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.trackBar8.Maximum = 200;
             this.trackBar8.Minimum = -200;
             this.trackBar8.Name = "trackBar8";
             this.trackBar8.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.trackBar8.Size = new System.Drawing.Size(45, 273);
+            this.trackBar8.Size = new System.Drawing.Size(56, 336);
             this.trackBar8.SmallChange = 20;
             this.trackBar8.TabIndex = 63;
             this.trackBar8.TickFrequency = 10;
             // 
             // trackBar7
             // 
-            this.trackBar7.Location = new System.Drawing.Point(317, 12);
+            this.trackBar7.Location = new System.Drawing.Point(423, 15);
+            this.trackBar7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.trackBar7.Maximum = 200;
             this.trackBar7.Minimum = -200;
             this.trackBar7.Name = "trackBar7";
             this.trackBar7.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.trackBar7.Size = new System.Drawing.Size(45, 273);
+            this.trackBar7.Size = new System.Drawing.Size(56, 336);
             this.trackBar7.SmallChange = 20;
             this.trackBar7.TabIndex = 62;
             this.trackBar7.TickFrequency = 10;
             // 
             // trackBar6
             // 
-            this.trackBar6.Location = new System.Drawing.Point(266, 12);
+            this.trackBar6.Location = new System.Drawing.Point(355, 15);
+            this.trackBar6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.trackBar6.Maximum = 200;
             this.trackBar6.Minimum = -200;
             this.trackBar6.Name = "trackBar6";
             this.trackBar6.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.trackBar6.Size = new System.Drawing.Size(45, 273);
+            this.trackBar6.Size = new System.Drawing.Size(56, 336);
             this.trackBar6.SmallChange = 20;
             this.trackBar6.TabIndex = 61;
             this.trackBar6.TickFrequency = 10;
             // 
             // trackBar5
             // 
-            this.trackBar5.Location = new System.Drawing.Point(215, 12);
+            this.trackBar5.Location = new System.Drawing.Point(287, 15);
+            this.trackBar5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.trackBar5.Maximum = 200;
             this.trackBar5.Minimum = -200;
             this.trackBar5.Name = "trackBar5";
             this.trackBar5.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.trackBar5.Size = new System.Drawing.Size(45, 273);
+            this.trackBar5.Size = new System.Drawing.Size(56, 336);
             this.trackBar5.SmallChange = 20;
             this.trackBar5.TabIndex = 60;
             this.trackBar5.TickFrequency = 10;
             // 
             // trackBar4
             // 
-            this.trackBar4.Location = new System.Drawing.Point(164, 12);
+            this.trackBar4.Location = new System.Drawing.Point(219, 15);
+            this.trackBar4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.trackBar4.Maximum = 200;
             this.trackBar4.Minimum = -200;
             this.trackBar4.Name = "trackBar4";
             this.trackBar4.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.trackBar4.Size = new System.Drawing.Size(45, 273);
+            this.trackBar4.Size = new System.Drawing.Size(56, 336);
             this.trackBar4.SmallChange = 20;
             this.trackBar4.TabIndex = 59;
             this.trackBar4.TickFrequency = 10;
             // 
             // trackBar3
             // 
-            this.trackBar3.Location = new System.Drawing.Point(113, 12);
+            this.trackBar3.Location = new System.Drawing.Point(151, 15);
+            this.trackBar3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.trackBar3.Maximum = 200;
             this.trackBar3.Minimum = -200;
             this.trackBar3.Name = "trackBar3";
             this.trackBar3.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.trackBar3.Size = new System.Drawing.Size(45, 273);
+            this.trackBar3.Size = new System.Drawing.Size(56, 336);
             this.trackBar3.SmallChange = 20;
             this.trackBar3.TabIndex = 58;
             this.trackBar3.TickFrequency = 10;
             // 
             // trackBar2
             // 
-            this.trackBar2.Location = new System.Drawing.Point(62, 12);
+            this.trackBar2.Location = new System.Drawing.Point(83, 15);
+            this.trackBar2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.trackBar2.Maximum = 200;
             this.trackBar2.Minimum = -200;
             this.trackBar2.Name = "trackBar2";
             this.trackBar2.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.trackBar2.Size = new System.Drawing.Size(45, 273);
+            this.trackBar2.Size = new System.Drawing.Size(56, 336);
             this.trackBar2.SmallChange = 20;
             this.trackBar2.TabIndex = 57;
             this.trackBar2.TickFrequency = 10;
             // 
             // trackBar1
             // 
-            this.trackBar1.Location = new System.Drawing.Point(12, 12);
+            this.trackBar1.Location = new System.Drawing.Point(16, 15);
+            this.trackBar1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.trackBar1.Maximum = 200;
             this.trackBar1.Minimum = -200;
             this.trackBar1.Name = "trackBar1";
             this.trackBar1.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.trackBar1.Size = new System.Drawing.Size(45, 273);
+            this.trackBar1.Size = new System.Drawing.Size(56, 336);
             this.trackBar1.SmallChange = 20;
             this.trackBar1.TabIndex = 56;
             this.trackBar1.TickFrequency = 10;
@@ -159,9 +168,10 @@
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(164, 334);
+            this.button1.Location = new System.Drawing.Point(219, 411);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(100, 28);
             this.button1.TabIndex = 64;
             this.button1.Text = "Apply";
             this.button1.UseVisualStyleBackColor = true;
@@ -169,10 +179,10 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(415, 370);
+            this.ClientSize = new System.Drawing.Size(553, 455);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.trackBar8);
             this.Controls.Add(this.trackBar7);
@@ -184,12 +194,14 @@
             this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.comboBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UniversalEqualizer";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Shown += new System.EventHandler(this.Form1_Shown);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.trackBar8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar6)).EndInit();

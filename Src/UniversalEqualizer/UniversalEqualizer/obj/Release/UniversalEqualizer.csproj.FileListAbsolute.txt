@@ -34,3 +34,14 @@ C:\Users\micha\Documents\Work\Audio-Video-Tools\Src\Equalizers\UniversalEqualize
 C:\Users\micha\Documents\Work\Audio-Video-Tools\Src\Equalizers\UniversalEqualizer\Src\UniversalEqualizer\UniversalEqualizer\obj\Release\UniversalEqualizer.csproj.CopyComplete
 C:\Users\micha\Documents\Work\Audio-Video-Tools\Src\Equalizers\UniversalEqualizer\Src\UniversalEqualizer\UniversalEqualizer\obj\Release\UniversalEqualizer.exe
 C:\Users\micha\Documents\Work\Audio-Video-Tools\Src\Equalizers\UniversalEqualizer\Src\UniversalEqualizer\UniversalEqualizer\obj\Release\UniversalEqualizer.pdb
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\UniversalEqualizer\UniversalEqualizer\bin\Release\UniversalEqualizer.exe.config
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\UniversalEqualizer\UniversalEqualizer\bin\Release\UniversalEqualizer.exe
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\UniversalEqualizer\UniversalEqualizer\bin\Release\UniversalEqualizer.pdb
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\UniversalEqualizer\UniversalEqualizer\obj\Release\UniversalEqualizer.csproj.AssemblyReference.cache
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\UniversalEqualizer\UniversalEqualizer\obj\Release\UniversalEqualizer.Form1.resources
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\UniversalEqualizer\UniversalEqualizer\obj\Release\UniversalEqualizer.Properties.Resources.resources
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\UniversalEqualizer\UniversalEqualizer\obj\Release\UniversalEqualizer.csproj.GenerateResource.cache
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\UniversalEqualizer\UniversalEqualizer\obj\Release\UniversalEqualizer.csproj.CoreCompileInputs.cache
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\UniversalEqualizer\UniversalEqualizer\obj\Release\UniversalEqualizer.csproj.CopyComplete
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\UniversalEqualizer\UniversalEqualizer\obj\Release\UniversalEqualizer.exe
+C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\UniversalEqualizer\UniversalEqualizer\obj\Release\UniversalEqualizer.pdb

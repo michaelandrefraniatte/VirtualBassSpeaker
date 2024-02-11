@@ -3,7 +3,6 @@ C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\Echo\Echo\bin\
 C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\Echo\Echo\bin\Release\Echo.pdb
 C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\Echo\Echo\bin\Release\NAudio.xml
 C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\Echo\Echo\obj\Release\Echo.csproj.AssemblyReference.cache
-C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\Echo\Echo\obj\Release\Echo.csproj.SuggestedBindingRedirects.cache
 C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\Echo\Echo\obj\Release\Echo.Form1.resources
 C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\Echo\Echo\obj\Release\Echo.Properties.Resources.resources
 C:\Users\micha\Documents\github\FootstepAmplifier4FPSOfficial\Src\Echo\Echo\obj\Release\Echo.csproj.GenerateResource.cache
