@@ -26,6 +26,23 @@ namespace EchoBoost
         private BufferedWaveProvider waveProvider = null;
         private WasapiOut waveOut = null;
         private static bool capturedevicefirst = false;
+        private void Form1_KeyDown(object sender, KeyEventArgs e)
+        {
+            OnKeyDown(e.KeyData);
+        }
+        private void OnKeyDown(Keys keyData)
+        {
+            if (keyData == Keys.F1)
+            {
+                const string message = "• Author: Michaël André Franiatte.\n\r\n\r• Contact: michael.franiatte@gmail.com.\n\r\n\r• Publisher: https://github.com/michaelandrefraniatte.\n\r\n\r• Copyrights: All rights reserved, no permissions granted.\n\r\n\r• License: Not open source, not free of charge to use.";
+                const string caption = "About";
+                MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            if (keyData == Keys.Escape)
+            {
+                this.Close();
+            }
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
             TimeBeginPeriod(1);
@@ -45,38 +62,19 @@ namespace EchoBoost
                 if (!capturedevicefirst)
                     break;
             }
-            waveOut = new WasapiOut(wasapi, AudioClientShareMode.Exclusive, false, 1);
+            waveOut = new WasapiOut(wasapi, AudioClientShareMode.Exclusive, false, 2);
             waveProvider = new BufferedWaveProvider(waveOut.OutputWaveFormat);
+            waveProvider.DiscardOnBufferOverflow = true;
+            waveProvider.BufferDuration = TimeSpan.FromMilliseconds(80);
             waveOut.Init(waveProvider);
             waveOut.Play();
             waveIn = new WasapiLoopbackCapture();
             waveIn.DataAvailable += waveIn_DataAvailable;
             waveIn.StartRecording();
         }
-        private void Form1_KeyDown(object sender, KeyEventArgs e)
-        {
-            OnKeyDown(e.KeyData);
-        }
-        private void OnKeyDown(Keys keyData)
-        {
-            if (keyData == Keys.F1)
-            {
-                const string message = "• Author: Michaël André Franiatte.\n\r\n\r• Contact: michael.franiatte@gmail.com.\n\r\n\r• Publisher: https://github.com/michaelandrefraniatte.\n\r\n\r• Copyrights: All rights reserved, no permissions granted.\n\r\n\r• License: Not open source, not free of charge to use.";
-                const string caption = "About";
-                MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            if (keyData == Keys.Escape)
-            {
-                this.Close();
-            }
-        }
         private void waveIn_DataAvailable(object sender, WaveInEventArgs e)
         {
-            if (e.BytesRecorded > 0 & waveProvider != null)
-            {
-                Task.Run(() => waveProvider.AddSamples(e.Buffer, 0, e.BytesRecorded));
-                Thread.Sleep(10);
-            }
+            waveProvider.AddSamples(e.Buffer, 0, e.BytesRecorded);
         }
         private void TrayMenuContext()
         {
