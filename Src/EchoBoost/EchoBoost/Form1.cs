@@ -1,6 +1,8 @@
 ﻿using System;
 using System.IO;
 using System.Runtime.InteropServices;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using NAudio.CoreAudioApi;
 using NAudio.Wave;
@@ -43,7 +45,7 @@ namespace EchoBoost
                 if (!capturedevicefirst)
                     break;
             }
-            waveOut = new WasapiOut(wasapi, AudioClientShareMode.Exclusive, false, 2);
+            waveOut = new WasapiOut(wasapi, AudioClientShareMode.Exclusive, false, 1);
             waveProvider = new BufferedWaveProvider(waveOut.OutputWaveFormat);
             waveOut.Init(waveProvider);
             waveOut.Play();
@@ -72,9 +74,8 @@ namespace EchoBoost
         {
             if (e.BytesRecorded > 0 & waveProvider != null)
             {
-                byte[] rawdata = new byte[e.BytesRecorded];
-                Array.Copy(e.Buffer, 0, rawdata, 0, e.BytesRecorded);
-                waveProvider.AddSamples(rawdata, 0, rawdata.Length);
+                Task.Run(() => waveProvider.AddSamples(e.Buffer, 0, e.BytesRecorded));
+                Thread.Sleep(10);
             }
         }
         private void TrayMenuContext()
