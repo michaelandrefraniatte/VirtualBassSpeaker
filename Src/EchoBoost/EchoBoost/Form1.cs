@@ -49,6 +49,7 @@ namespace EchoBoost
             NtSetTimerResolution(1, true, ref CurrentResolution);
             TrayMenuContext();
             MinimzedTray();
+            int inc = 0;
             Task.Run(() => {
                 do
                 {
@@ -78,6 +79,13 @@ namespace EchoBoost
                         CloseWaves();
                         capturedevicefirst = true;
                         ison = false;
+                        inc++;
+                        if (inc > 1)
+                        {
+                            MessageBox.Show("Closing! You don't have a second audio card enable.");
+                            closeonicon = true;
+                            this.Close();
+                        }
                     }
                     finally
                     {
