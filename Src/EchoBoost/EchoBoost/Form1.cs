@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 using System.Runtime.InteropServices;
 using System.Threading;
 using System.Threading.Tasks;
@@ -26,6 +25,7 @@ namespace EchoBoost
         private BufferedWaveProvider waveProvider = null;
         private WasapiOut waveOut = null;
         private static bool capturedevicefirst = false;
+        private bool ison = false, closed = false;
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
             OnKeyDown(e.KeyData);
@@ -49,28 +49,64 @@ namespace EchoBoost
             NtSetTimerResolution(1, true, ref CurrentResolution);
             TrayMenuContext();
             MinimzedTray();
-            using (StreamReader file = new StreamReader("params.txt"))
+            Task.Run(() => {
+                do
+                {
+                    try
+                    {
+                        var enumerator = new MMDeviceEnumerator();
+                        MMDevice wasapi = null;
+                        foreach (var mmdevice in enumerator.EnumerateAudioEndPoints(DataFlow.Render, DeviceState.Active))
+                        {
+                            wasapi = mmdevice;
+                            if (!capturedevicefirst)
+                                break;
+                        }
+                        waveOut = new WasapiOut(wasapi, AudioClientShareMode.Exclusive, false, 2);
+                        waveProvider = new BufferedWaveProvider(waveOut.OutputWaveFormat);
+                        waveProvider.DiscardOnBufferOverflow = true;
+                        waveProvider.BufferDuration = TimeSpan.FromMilliseconds(80);
+                        waveOut.Init(waveProvider);
+                        waveOut.Play();
+                        waveIn = new WasapiLoopbackCapture();
+                        waveIn.DataAvailable += waveIn_DataAvailable;
+                        waveIn.StartRecording();
+                        ison = true;
+                    }
+                    catch
+                    {
+                        CloseWaves();
+                        capturedevicefirst = true;
+                        ison = false;
+                    }
+                    finally
+                    {
+                        Thread.Sleep(1000);
+                    }
+                }
+                while (!ison & !closed);
+            });
+        }
+        private void CloseWaves()
+        {
+            try
             {
-                file.ReadLine();
-                capturedevicefirst = bool.Parse(file.ReadLine());
+                if (waveIn != null)
+                {
+                    waveIn.StopRecording();
+                    waveIn.Dispose();
+                }
+                if (waveOut != null)
+                {
+                    waveOut.Stop();
+                    waveOut.Dispose();
+                }
+                if (waveProvider != null)
+                {
+                    waveProvider = null;
+                }
             }
-            var enumerator = new MMDeviceEnumerator();
-            MMDevice wasapi = null;
-            foreach (var mmdevice in enumerator.EnumerateAudioEndPoints(DataFlow.Render, DeviceState.Active))
-            {
-                wasapi = mmdevice;
-                if (!capturedevicefirst)
-                    break;
-            }
-            waveOut = new WasapiOut(wasapi, AudioClientShareMode.Exclusive, false, 2);
-            waveProvider = new BufferedWaveProvider(waveOut.OutputWaveFormat);
-            waveProvider.DiscardOnBufferOverflow = true;
-            waveProvider.BufferDuration = TimeSpan.FromMilliseconds(80);
-            waveOut.Init(waveProvider);
-            waveOut.Play();
-            waveIn = new WasapiLoopbackCapture();
-            waveIn.DataAvailable += waveIn_DataAvailable;
-            waveIn.StartRecording();
+            catch { }
         }
         private void waveIn_DataAvailable(object sender, WaveInEventArgs e)
         {
@@ -110,15 +146,15 @@ namespace EchoBoost
                 MinimzedTray();
                 return;
             }
+            closed = true;
+            Thread.Sleep(100);
+            CloseWaves();
         }
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            if (waveIn != null)
-                waveIn.StopRecording();
-            if (waveOut != null)
-                waveOut.Stop();
-            if (waveProvider != null)
-                waveProvider = null;
+            closed = true;
+            Thread.Sleep(100);
+            CloseWaves();
         }
     }
 }

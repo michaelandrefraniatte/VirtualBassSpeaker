@@ -1,2 +1,0 @@
-//Capture device is first device
-True
