@@ -77,6 +77,7 @@ namespace EchoBoost
                         waveProvider = new BufferedWaveProvider(WaveFormat.CreateCustomFormat(waveIn.WaveFormat.Encoding, waveIn.WaveFormat.SampleRate, waveIn.WaveFormat.Channels, waveIn.WaveFormat.AverageBytesPerSecond, waveIn.WaveFormat.BlockAlign, waveIn.WaveFormat.BitsPerSample));
                         waveProvider.DiscardOnBufferOverflow = true;
                         waveProvider.BufferDuration = TimeSpan.FromMilliseconds(80);
+                        waveProvider.BufferLength = waveIn.WaveFormat.AverageBytesPerSecond * 80 / 1000;
                         waveOut.Init(waveProvider);
                         waveOut.Play();
                         waveIn.DataAvailable += waveIn_DataAvailable;
