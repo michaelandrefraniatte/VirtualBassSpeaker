@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
+using System.IO;
 using System.Runtime.InteropServices;
 using System.Runtime.Remoting.Channels;
 using System.Threading;
@@ -51,6 +53,11 @@ namespace EchoBoost
             NtSetTimerResolution(1, true, ref CurrentResolution);
             TrayMenuContext();
             MinimzedTray();
+            if (File.Exists(Application.StartupPath + @"\tempecho"))
+                using (System.IO.StreamReader file = new System.IO.StreamReader(Application.StartupPath + @"\tempecho"))
+                {
+                    capturedevicefirst = bool.Parse(file.ReadLine());
+                }
             int inc = 0;
             Task.Run(() => {
                 do
@@ -79,7 +86,10 @@ namespace EchoBoost
                     catch
                     {
                         CloseWaves();
-                        capturedevicefirst = true;
+                        if (!capturedevicefirst)
+                            capturedevicefirst = true;
+                        else
+                            capturedevicefirst = false;
                         ison = false;
                         inc++;
                         if (inc > 1)
@@ -165,6 +175,10 @@ namespace EchoBoost
             closed = true;
             Thread.Sleep(100);
             CloseWaves();
+            using (System.IO.StreamWriter createdfile = new System.IO.StreamWriter(Application.StartupPath + @"\tempecho"))
+            {
+                createdfile.WriteLine(capturedevicefirst);
+            }
         }
     }
 }
